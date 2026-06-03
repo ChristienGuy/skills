@@ -2,7 +2,12 @@
   "version": 1,
   "entries": {
     "_PaddleHQ-agent-skills": {
-      "source": "git@github.com:PaddleHQ/agent-skills.git",
+      "source": "https://github.com/PaddleHQ/agent-skills.git",
+      "tracked": true,
+      "branch": "main"
+    },
+    "_agent-skills": {
+      "source": "https://github.com/PaddleHQ/agent-skills.git",
       "tracked": true,
       "branch": "main"
     },

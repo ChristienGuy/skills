@@ -5,9 +5,11 @@ Thumbs.db
 *.swp
 *.local
 .skillshare/
+.claude/
 
 # BEGIN SKILLSHARE MANAGED - DO NOT EDIT
 _PaddleHQ-agent-skills/
 _mattpocock-skills/
 _ibelick-ui-skills/
+_agent-skills/
 # END SKILLSHARE MANAGED
