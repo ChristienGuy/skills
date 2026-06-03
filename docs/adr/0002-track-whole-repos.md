@@ -1,0 +1,5 @@
+# Track whole upstream repos, not cherry-picked skills
+
+We follow each upstream as a whole **tracked repo** (`skillshare install --track`) and switch off unwanted skills via skillshare's toggle state, rather than maintaining a hand-curated allowlist of individual skill names. This replaces an earlier design — a `skills.yaml` manifest plus a `bootstrap` translator that fed `skillshare install --skill` — which existed to back a custom skills TUI. skillshare's own TUI now does the browsing and per-skill toggling, so the manifest and bootstrap were redundant and are gone.
+
+Trade-off: we lose a curated per-skill allowlist and the curation history a manifest's `git log` gave us, and we pull every skill from an upstream even when we only wanted one. In exchange, maintenance drops to near zero (no manifest to edit, no translator to run), and the on/off state lives in `.skillignore`, which syncs natively with the rest of the source. Reversible if a specific upstream ever warrants it: switch that one back to `--skill` cherry-picks.

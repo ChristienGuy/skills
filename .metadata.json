@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "entries": {
+    "_PaddleHQ-agent-skills": {
+      "source": "git@github.com:PaddleHQ/agent-skills.git",
+      "tracked": true,
+      "branch": "main"
+    },
+    "_ibelick-ui-skills": {
+      "source": "https://github.com/ibelick/ui-skills.git",
+      "tracked": true,
+      "branch": "main"
+    },
+    "_mattpocock-skills": {
+      "source": "https://github.com/mattpocock/skills.git",
+      "tracked": true,
+      "branch": "main"
+    }
+  }
+}
