@@ -42,6 +42,6 @@ Bootstrap behaviour when invoked with `--dev`. Authored skills are installed fro
 
 > "I added a new skill to the pack — `tdd` from `mattpocock/skills`."
 > "Authored or upstream?"
-> "Upstream. I added a line to the manifest, ran bootstrap, and it landed in the sync source. Skillshare tracks the upstream now, so I can pull updates with `skillshare update`."
+> "Upstream. I added a line to the manifest, ran bootstrap, and it landed in the sync source. Skillshare stored its source metadata, so when I run `skillshare update --all` later it'll reinstall the latest from `main`."
 > "And the one you've been editing today?"
 > "That's authored — `feature-workflow`. I ran bootstrap in dev mode so my edits in the checkout show up live without a re-install."

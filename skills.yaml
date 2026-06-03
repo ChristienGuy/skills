@@ -1,6 +1,6 @@
 # skills.yaml — single source of truth for what this pack contains.
 #
-# `bootstrap` reads this file and runs `skillshare install --track` for each entry.
+# `bootstrap` reads this file and runs `skillshare install --skill` for each entry.
 # Float-on-main: omit `ref` to track the upstream's default branch.
 
 # Authored skills under this repo's skills/ directory.
@@ -8,9 +8,10 @@
 authored: []
 
 # Curated upstream skills.
-# For flat repos: bare names work (e.g. "aws").
-# For nested repos: use path relative to the upstream's repo root
-# (e.g. "skills/engineering/tdd").
+# Entries are skill **names** (frontmatter `name:` / leaf directory name) — never
+# paths. Skillshare's --skill flag resolves names within the cloned repo regardless
+# of nesting. If two skills in the same upstream ever collide on name, we'd need to
+# revisit this scheme.
 upstreams:
 
   - repo: PaddleHQ/agent-skills
@@ -49,7 +50,7 @@ upstreams:
       - paddle-go-standards
       - paddle-id
       - paddle-scopes
-      - payments/adding-a-new-currency
+      - adding-a-new-currency
       - pdl
       - provisioning-ssm-secrets
       - review-backend-adversarial
@@ -60,50 +61,50 @@ upstreams:
       - service-private-keys
       - ship-it
       - snowflake-cli
-      - transaction/stuck-in-paid
+      - stuck-in-paid
       - vault-database-credentials
       - web-animation-design
 
   - repo: mattpocock/skills
     skills:
       # deprecated — likely first to prune
-      - skills/deprecated/design-an-interface
-      - skills/deprecated/qa
-      - skills/deprecated/request-refactor-plan
-      - skills/deprecated/ubiquitous-language
+      - design-an-interface
+      - qa
+      - request-refactor-plan
+      - ubiquitous-language
       # engineering
-      - skills/engineering/diagnose
-      - skills/engineering/grill-with-docs
-      - skills/engineering/improve-codebase-architecture
-      - skills/engineering/prototype
-      - skills/engineering/setup-matt-pocock-skills
-      - skills/engineering/tdd
-      - skills/engineering/to-issues
-      - skills/engineering/to-prd
-      - skills/engineering/triage
-      - skills/engineering/zoom-out
+      - diagnose
+      - grill-with-docs
+      - improve-codebase-architecture
+      - prototype
+      - setup-matt-pocock-skills
+      - tdd
+      - to-issues
+      - to-prd
+      - triage
+      - zoom-out
       # in-progress
-      - skills/in-progress/review
-      - skills/in-progress/writing-beats
-      - skills/in-progress/writing-fragments
-      - skills/in-progress/writing-shape
+      - review
+      - writing-beats
+      - writing-fragments
+      - writing-shape
       # misc
-      - skills/misc/git-guardrails-claude-code
-      - skills/misc/migrate-to-shoehorn
-      - skills/misc/scaffold-exercises
-      - skills/misc/setup-pre-commit
+      - git-guardrails-claude-code
+      - migrate-to-shoehorn
+      - scaffold-exercises
+      - setup-pre-commit
       # personal
-      - skills/personal/edit-article
-      - skills/personal/obsidian-vault
+      - edit-article
+      - obsidian-vault
       # productivity
-      - skills/productivity/caveman
-      - skills/productivity/grill-me
-      - skills/productivity/handoff
-      - skills/productivity/write-a-skill
+      - caveman
+      - grill-me
+      - handoff
+      - write-a-skill
 
   - repo: ibelick/ui-skills
     skills:
-      - skills/baseline-ui
-      - skills/fixing-accessibility
-      - skills/fixing-metadata
-      - skills/fixing-motion-performance
+      - baseline-ui
+      - fixing-accessibility
+      - fixing-metadata
+      - fixing-motion-performance

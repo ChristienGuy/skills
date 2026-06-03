@@ -18,7 +18,7 @@ CONTEXT.md           # glossary of project-specific terms
 
 ```bash
 # Prereqs
-brew install yq
+brew install bash yq          # macOS ships bash 3.2; bootstrap needs 4+
 # install skillshare per its own instructions
 
 # Clone and run
