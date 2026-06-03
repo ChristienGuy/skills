@@ -1,0 +1,109 @@
+# skills.yaml — single source of truth for what this pack contains.
+#
+# `bootstrap` reads this file and runs `skillshare install --track` for each entry.
+# Float-on-main: omit `ref` to track the upstream's default branch.
+
+# Authored skills under this repo's skills/ directory.
+# Each name maps to skills/<name>/SKILL.md.
+authored: []
+
+# Curated upstream skills.
+# For flat repos: bare names work (e.g. "aws").
+# For nested repos: use path relative to the upstream's repo root
+# (e.g. "skills/engineering/tdd").
+upstreams:
+
+  - repo: PaddleHQ/agent-skills
+    skills:
+      - adding-event-subscriptions
+      - adversarial-agent-review
+      - api-design
+      - aws
+      - bdd-feature-tests
+      - database-readonly-query
+      - dependencies
+      - deploy-dev
+      - deploy-prod
+      - dispatching-parallel-agents
+      - feature-flags
+      - feature-workflow
+      - frontend-take-home-test-reviewer
+      - generated-files
+      - git-spice
+      - github-pr-checks-summary
+      - go-http-handlers
+      - go-migrations
+      - go-n-ntier
+      - go-outboxer-queue-relay
+      - go-testing
+      - go-tools
+      - hiring-backend-take-home-test-scorer
+      - iterative-self-review
+      - linear-issues
+      - local-api-call
+      - local-dev
+      - my-unreleased
+      - outboxer-queue-relay-versions
+      - paddle-api-specifications
+      - paddle-config
+      - paddle-go-standards
+      - paddle-id
+      - paddle-scopes
+      - payments/adding-a-new-currency
+      - pdl
+      - provisioning-ssm-secrets
+      - review-backend-adversarial
+      - review-frontend-adversarial
+      - review-pr-adversarial
+      - schema-mismatch-root-cause
+      - security-review
+      - service-private-keys
+      - ship-it
+      - snowflake-cli
+      - transaction/stuck-in-paid
+      - vault-database-credentials
+      - web-animation-design
+
+  - repo: mattpocock/skills
+    skills:
+      # deprecated — likely first to prune
+      - skills/deprecated/design-an-interface
+      - skills/deprecated/qa
+      - skills/deprecated/request-refactor-plan
+      - skills/deprecated/ubiquitous-language
+      # engineering
+      - skills/engineering/diagnose
+      - skills/engineering/grill-with-docs
+      - skills/engineering/improve-codebase-architecture
+      - skills/engineering/prototype
+      - skills/engineering/setup-matt-pocock-skills
+      - skills/engineering/tdd
+      - skills/engineering/to-issues
+      - skills/engineering/to-prd
+      - skills/engineering/triage
+      - skills/engineering/zoom-out
+      # in-progress
+      - skills/in-progress/review
+      - skills/in-progress/writing-beats
+      - skills/in-progress/writing-fragments
+      - skills/in-progress/writing-shape
+      # misc
+      - skills/misc/git-guardrails-claude-code
+      - skills/misc/migrate-to-shoehorn
+      - skills/misc/scaffold-exercises
+      - skills/misc/setup-pre-commit
+      # personal
+      - skills/personal/edit-article
+      - skills/personal/obsidian-vault
+      # productivity
+      - skills/productivity/caveman
+      - skills/productivity/grill-me
+      - skills/productivity/handoff
+      - skills/productivity/write-a-skill
+
+  - repo: ibelick/ui-skills
+    skills:
+      - skills/baseline-ui
+      - skills/fixing-accessibility
+      - skills/fixing-metadata
+      - skills/fixing-motion-performance
